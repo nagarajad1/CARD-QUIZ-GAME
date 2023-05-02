@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    TextView for Question -->
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:padding="30dp"
+            android:text="Q2. Which of the following is a correct format for specifying a drawable resource in Android?"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+        <!-- RadioGroup for Answers-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <RadioButton
+                android:id="@+id/radio_android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="'@android/drawable/ic_launcher'" />
+
+            <RadioButton
+                android:id="@+id/radio_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="'@drawable/ic_launcher'" />
+
+            <RadioButton
+                android:id="@+id/radio_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="'@string/ic_launcher'" />
+
+            <RadioButton
+                android:id="@+id/radio_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked2"
+                android:text="'@color/ic_launcher'" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
